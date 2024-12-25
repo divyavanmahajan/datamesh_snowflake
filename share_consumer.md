@@ -1,6 +1,6 @@
 # Consuming shared data from the 'prod' account to the 'dev' account.
 
-The 'prod' account is the central landing zone which stores all the data products to be shared by the 'dev'/mesh domains. See (Microsoft: Self serve data platforms)[https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/self-serve-data-platforms]
+The 'prod' account is the central landing zone which stores all the data products to be shared by the 'dev'/mesh domains. See [Microsoft: Self serve data platforms](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/self-serve-data-platforms)
 
 
 To **mount a share** in the **dev account** using the `CREATE DATABASE FROM SHARE` syntax, you will follow these steps. This method is the preferred way to create a **database** directly from a **share** in Snowflake, which allows the **dev account** to access the shared data from the **prod account** (RZ556038) using a **share**.
