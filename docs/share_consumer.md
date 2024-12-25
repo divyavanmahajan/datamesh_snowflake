@@ -1,5 +1,5 @@
 # Consuming shared data from the 'prod' account to the 'dev' account.
-[Go back](./README.md)
+[Go back](../README.md)
 
 The 'prod' account is the central landing zone which stores all the data products to be shared by the 'dev'/mesh domains. See [Microsoft: Self serve data platforms](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/self-serve-data-platforms)
 

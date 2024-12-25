@@ -1,6 +1,6 @@
 # Python to teardown the sandbox
 
-[Go back](./README.md)
+[Go back](../README.md)
 
 A similar Jinja template that removes all the Snowflake objects created in the previous script, we'll generate SQL commands to drop the objects such as the database, schema, warehouse, roles, and budget. We'll assume the same structure as before, but the SQL commands will be focused on deleting or dropping the objects.
 

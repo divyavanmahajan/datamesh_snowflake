@@ -1,5 +1,5 @@
 # Creating the sandbox for the data mesh
-[Go back](./README.md)
+[Go back](../README.md)
 
 To implement a **budget** specifically for the **data mesh domain** using the newer **Snowflake Budget Object**, we will create a **budget** specific to the **domain** using the `CREATE BUDGET` command, which was introduced to manage and monitor the budget for your Snowflake usage. We'll also make sure the **`domain_admin`** and **`domain_creator`** roles have the necessary permissions to **view** and **monitor** the budget for the **data mesh domain**.
 
