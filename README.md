@@ -8,3 +8,5 @@ These documents walk you through the required SQL to create an isolated/sandbox 
 - [Producer sharing data](./share_producer.md).
 - [Consumer using shared data](./share_consumer.md).
 
+- [Python to create the sandbox](./python_generate.md).
+- [Python to teardown the sandbox](./python_teardown.md).
