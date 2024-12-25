@@ -1,4 +1,4 @@
-# Python script to generate the SQL based on placeholders.
+# Python to create the sandbox.
 
 Below is the SQL script converted into a Jinja template format with the specified placeholders replaced by Jinja template syntax (`{{ }}`) for dynamic variables such as `domain`, `self_service_db`, `admin_user`, `creator_user`, and `viewer_user`.
 
