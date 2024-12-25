@@ -10,3 +10,21 @@ These documents walk you through the required SQL to create an isolated/sandbox 
 
 - [Python to create the sandbox](./python_generate.md).
 - [Python to teardown the sandbox](./python_teardown.md).
+
+### How to Run
+
+1. **Install dependencies** (if you haven't already):
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. **Ensure you have the following files in the same directory:**
+   - `sql_template.sql` (the Jinja templates are stored in the templates directory)
+   
+2. **Ensure you have the following files in the workspace subdirectory:**
+   - `workspaces/<domain>` (the domain subdirectory directory )
+   - `parameters.yaml` (the YAML file with parameters, should be in the `workspaces/<domain>` directory )
+   
+3. **Run the bash script**:
+   ```bash
+   generate.sh <domain>
+   ```

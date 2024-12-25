@@ -1,0 +1,12 @@
+self_service_db: "self_service" 
+domain: "cs_emeacla"
+admin_users:
+  - "divyavanmahajan"
+  - "admin2"
+  - "admin3"
+creator_users:
+  - "divyavanmahajan"
+  -  "creator456"
+viewer_users: 
+  - "divyavanmahajan"
+  - "viewer789"
