@@ -59,6 +59,11 @@ def main():
     params['now'] = get_current_timestamp()
     params['git_commit_hash'] = get_git_commit_hash()
 
+    # # Print all keys in the config
+    # print("Keys in the config:")
+    # for key in params.keys():
+    #     print(key)
+        
     # Generate SQL from the Jinja template
     sql = generate_sql(args.template_file, params)
 

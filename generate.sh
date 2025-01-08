@@ -14,7 +14,7 @@ SCRIPT_DIR="$(dirname "$(realpath "$0")")"  # Directory of the bash script
 TEMPLATES_DIR="$SCRIPT_DIR/templates"       # Directory where SQL templates are located
 WORKSPACES_DIR="$SCRIPT_DIR/workspaces/$DOMAIN"  # Workspace directory for the domain
 YAML_FILE="$WORKSPACES_DIR/parameters.yaml"  # Path to the YAML file
-OUTPUT_DIR="$WORKSPACES_DIR"                 # Output directory (same as workspace)
+OUTPUT_DIR="$WORKSPACES_DIR/sql"                 # Output directory (same as workspace)
 
 # Check if the workspaces/<domain> directory exists
 if [ ! -d "$WORKSPACES_DIR" ]; then
@@ -22,6 +22,8 @@ if [ ! -d "$WORKSPACES_DIR" ]; then
     exit 1
 fi
 
+# Clear *.sql files in the workspace directory
+rm -rf $WORKSPACES_DIR/sql/*sql
 # Check if the YAML file exists
 if [ ! -f "$YAML_FILE" ]; then
     echo "Error: The YAML file $YAML_FILE does not exist."

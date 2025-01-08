@@ -1,0 +1,52 @@
+domain: "trial"
+self_service_db: "self_service_test"
+costcenter: "cs0001"
+accounts: 
+  sandbox: RZA44357
+  production: EDWARDS
+WAREHOUSE:
+  WAREHOUSE_SIZE: XSMALL
+  WAREHOUSE_TYPE: STANDARD
+  INITIALLY_SUSPENDED: TRUE
+  AUTO_SUSPEND: 300
+  AUTO_RESUME: TRUE
+  MAX_CLUSTER_COUNT: 1
+  MIN_CLUSTER_COUNT: 1
+
+CPU_POOL:
+  MIN_NODES: 1
+  MAX_NODES: 5
+  INSTANCE_FAMILY: CPU_X64_XS
+  AUTO_SUSPEND_SECS: 300
+
+admin_users:
+  - PRANAV_KINI
+  - DIVYA_MAHAJAN
+creator_users:
+  - MAREK_TRAVNICEK_SAC
+  - VERONIKA_TABORSKA
+viewer_users:
+  - MAREK_TRAVNICEK
+  - PRASHANTH_JADAV
+
+mountshares:
+  production:
+    - edw_servicenow_sh
+    - edw_fivetran_sh
+shares:
+  production:
+    - edw:
+        - hangar:
+            - TABLE:
+                - C_JDE_ADDRESS_BOOK
+        - takeoff:
+            - TABLE:
+                - DIM_FIN_CUSTOMER
+            - VIEW:
+                - V_FIN_BALANCE
+            - 'MATERIALIZED VIEW':
+                - VW_FIN_BALANCE
+    - edw_hvr:
+        - landing:
+            - TABLE:
+              - F0001
