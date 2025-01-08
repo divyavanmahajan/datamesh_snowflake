@@ -1,8 +1,3 @@
-Sure! Here is a markdown file that provides instructions on how to create a similar YAML file with descriptions for each field and section:
-
-
----
-
 # Workspace configuration Guide
 
 Steps to create a new domain '**domain_name**'.

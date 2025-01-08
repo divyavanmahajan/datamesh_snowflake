@@ -7,6 +7,9 @@ These documents walk you through the required SQL to create an isolated/sandbox 
 - [Create the sandbox with schema, warehouse, roles](docs/create_sandbox.md).
 - [Producer sharing data](docs/share_producer.md).
 - [Consumer using shared data](docs/share_consumer.md).
+
+## Automation
+- [YAML file to configure a new domain](docs/create_domain.md)
 - [Python to create the sandbox](docs/python_generate.md).
 - [Python to teardown the sandbox](docs/python_teardown.md).
 
